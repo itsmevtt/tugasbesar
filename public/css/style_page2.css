@@ -1,0 +1,250 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #EFEFEF;
+}
+
+#box-header {
+	background-color: #fff;
+	width: 100%;
+	height: 90px;
+	overflow: hidden;
+	position: fixed;
+	z-index: 1;
+}
+
+#logo {
+/*	background-color: #fff;*/
+	width: 200px;
+	height: 90px;
+	background-image: url(../images/page/logoPage.png);
+	background-size: auto 80px;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 8px;
+	left: 35px;
+
+}
+
+#nav {
+	position: absolute;
+	top: 35px;
+	left: 800px;
+}
+
+/*#nav ul {
+	text-decoration-line: none;
+	padding-left: 6px;
+}
+*/
+#nav ul li {
+	float: left;
+	list-style: none;
+	padding-left: 30px;
+	text-decoration-line: none;
+}
+
+#nav ul li a {
+	color: #58595B;
+	font-family: arial;
+	font-size: 18px;
+	text-decoration-line: none;
+}
+
+#line {
+	width: 100%;
+	height: 5px;
+	background-color: #D8D8D8;
+	position: fixed;
+	top: 90px;
+}
+
+#text-box1 {
+	padding-top: 10px;
+	padding-left: 50px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	background-color: #fff;
+	width: 55%;
+	height: 1200px auto;
+	margin-top: 115px;
+	margin-left: 40px;
+	float: left;
+}
+
+#text-box1 p {
+	font-size: 15px;
+	font-family: arial;
+	letter-spacing: 1px;
+}
+
+h1 {
+	color: #333333;
+	font-family: arial;
+}
+
+.title2 {
+	color: #333333;
+	font-family: arial;
+	font-size: 16px;
+}
+
+#sidebar-box1 {
+	margin-top: 115px;
+	margin-left: 40px;
+	width: 27%;
+	height: 250px;
+	background-color: #fff;
+	float: left;
+	padding-top: 16px;
+	padding-left: 16px;
+}
+
+#sidebar-box1 .foto_news {
+	background-color: #000;
+	width: 70px;
+	height: 70px;
+	float: left;
+	background-image: url(../images/page/1.jpeg);
+	background-size: 70px;
+
+}
+
+#sidebar-box1 .judul_news {
+	background-color: #fff;
+	width: 180px;
+	height: 70px;
+	float: left;
+	margin-left: 10px;
+
+}
+
+#sidebar-box1 .foto_news2 {
+	background-color: #000;
+	width: 70px;
+	height: 70px;
+	float: left;
+	background-image: url(../images/page/large.jpg);
+	background-repeat: no-repeat;
+	background-size: 70px;
+
+}
+
+#sidebar-box1 .judul_news2 {
+	background-color: #fff;
+	width: 180px;
+	height: 70px;
+	float: left;
+	margin-left: 10px;
+
+}
+
+#hr {
+	margin-top: 20px; 
+	margin-bottom: 20px;
+	float: left;
+	width: 100%;
+
+}
+
+h3 {
+	font-family: arial;
+	position: relative;
+	top: 20px;
+}
+
+#sidebar-box2 .foto_related {
+	background-color: #000;
+	width: 70px;
+	height: 70px;
+	float: left;
+	background-image: url(../images/page/wudhu.jpg);
+	background-size: 70px;
+
+}
+
+#sidebar-box2 .judul_related {
+	background-color: #fff;
+	width: 180px;
+	height: 70px;
+	float: left;
+	margin-left: 10px;
+
+}
+
+#sidebar-box2 .foto_related2 {
+	background-color: #000;
+	width: 70px;
+	height: 70px;
+	float: left;
+	background-image: url(../images/page/Shalat.jpg);
+	background-size: 70px;
+
+}
+
+#sidebar-box2 .judul_related2 {
+	background-color: #fff;
+	width: 180px;
+	height: 70px;
+	float: left;
+	margin-left: 10px;
+
+}
+
+
+#sidebar-box2 {
+	margin-top: 25px;
+	margin-left: 40px;
+	width: 27%;
+	height: 250px;
+	background-color: #fff;
+	float: left;
+	padding-top: 16px;
+	padding-left: 16px;
+}
+
+#line2 {
+	width: 61%;
+	height: 20px;
+	float: left;
+	background-color: #ED1C24;
+	position: relative;
+	margin-left: 40px;
+}
+
+/* 
+ * 7.0 Site-footer
+ */
+
+#site-footer {
+	margin-top: 25px;
+	width: 100%;
+	height: 200px;
+	background-color: #000;
+	float: left;
+
+}
+
+.site-footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0 10px;
+}
+.site-footer .site-info {
+    font-weight: 400;
+    margin-bottom: 10px;
+    letter-spacing: 2.3px;
+}
+.site-footer .site-info a {
+    color: #fff;
+}
+.site-footer .social-block li a {
+    color: #fff;
+}
+.site-footer .social-block li a:hover, .site-footer .social-block li a:focus {
+    opacity: 0.8;
+}
