@@ -1,25 +1,32 @@
 <?php
 
-class TestCase extends Illuminate\Foundation\Testing\TestCase
+
+use PHPUnit\DbUnit\TestCaseTrait;
+
+class DataSetFilterTest extends PHPUnit_Framework_TestCase
 {
-    /**
-     * The base URL to use while testing the application.
-     *
-     * @var string
-     */
-    protected $baseUrl = 'http://localhost';
+    use TestCaseTrait;
 
-    /**
-     * Creates the application.
-     *
-     * @return \Illuminate\Foundation\Application
-     */
-    public function createApplication()
+    public function testIncludeFilteredusers()
     {
-        $app = require __DIR__.'/../bootstrap/app.php';
+        $tableNames = ['users'];
+        $dataSet = $this->getConnection()->createDataSet();
 
-        $app->make(Illuminate\Contracts\Console\Kernel::class)->bootstrap();
+        $filterDataSet = new PHPUnit_Extensions_Database_DataSet_DataSetFilter($dataSet);
+        $filterDataSet->addIncludeTables(['users']);
+        $filterDataSet->setIncludeColumnsForTable('users', ['id', 'content']);
+        // ..
+    }
 
-        return $app;
+    public function testExcludeFilteredusers()
+    {
+        $tableNames = ['users'];
+        $dataSet = $this->getConnection()->createDataSet();
+
+        $filterDataSet = new PHPUnit_Extensions_Database_DataSet_DataSetFilter($dataSet);
+        $filterDataSet->addExcludeTables(['foo', 'bar', 'baz']); // only keep the users table!
+        $filterDataSet->setExcludeColumnsForTable('users', ['user', 'created']);
+        // ..
     }
 }
+?>
